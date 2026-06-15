@@ -1,1 +1,41 @@
-
+{
+  "Name": "OpenBCI Ultracortex Mark IV Motor Imagery EEG Dataset",
+  "BIDSVersion": "1.9.0",
+  "DatasetType": "raw",
+  "Authors": [
+    "Research Team": R. Riahi; C. Provenzale; E. Aloui; M. Hamila;S. Chatti;A. Maffucci; C. Carissimo;G. Cerro;G. Miele
+  ],
+  "Description": "This dataset contains EEG recordings collected from 5 subjects performing motor imagery tasks using the OpenBCI Ultracortex Mark IV headset. The dataset was designed to investigate neural activity associated with motor imagery while also assessing participant alertness and cognitive performance. At the end of each recording session, participants completed the Karolinska Sleepiness Scale (KSS) questionnaire and performed a reaction time task to provide subjective and objective measures of vigilance.",
+  "NumberOfSubjects": 5,
+  "NumberOfSessions": "4 sessions per participant ",
+  "TaskName": "motor_imagery",
+  "TaskDescription": "Participants performed cue-based motor imagery tasks involving the imagination of specific motor movements. EEG activity was recorded continuously throughout the experiment.",
+  "Modality": [
+    "EEG"
+  ],
+  "EEGSystem": "OpenBCI Ultracortex Mark IV",
+  "AvailableLabels": [
+    "motor_imagery_class",
+    "event_markers",
+    "KSS_score",
+    "reaction_time"
+  ],
+  "BehavioralMeasures": {
+    "KSS": {
+      "Description": "Karolinska Sleepiness Scale score collected at the end of each session to assess subjective sleepiness.",
+      "Range": "1-9"
+    },
+    "ReactionTime": {
+      "Description": "Reaction time task performed at the end of each session to assess vigilance and cognitive performance.",
+      "Unit": "milliseconds"
+    }
+  },
+  "TargetApplications": [
+    "Motor Imagery Classification",
+    "Brain-Computer Interfaces",
+    "Mental State Monitoring",
+    "Neuroergonomics"
+  ],
+  "DataFormat": "EEG recordings, event annotations, motor imagery labels, KSS scores, and reaction time measurements.",
+  "Acknowledgements": "We thank all participants for their contribution to this study."
+}
